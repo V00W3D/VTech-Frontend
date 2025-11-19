@@ -1,0 +1,22 @@
+/* ===========================
+   Fields — Responsive
+   =========================== */
+
+@media (max-width: 768px) {
+  .input-container input {
+    padding: 14px 12px;
+    font-size: 16px;
+  }
+  .input-container label {
+    top: 16px;
+    left: 12px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 420px) {
+  .input-container input {
+    padding: 12px 10px;
+    font-size: 15px;
+  }
+}

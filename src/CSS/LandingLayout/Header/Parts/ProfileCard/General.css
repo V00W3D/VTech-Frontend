@@ -1,0 +1,54 @@
+/* =======================================================
+   👤 PROFILE CARD — General (estructura base)
+   ======================================================= */
+
+.profile-card {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  background: rgba(25, 25, 25, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+  padding: 0.4rem 0.8rem 0.4rem 0.5rem;
+  box-shadow: 0 0 15px rgba(0, 255, 127, 0.15);
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.profile-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(
+    135deg,
+    var(--color-accent-light, #00ff9d),
+    var(--color-accent, #00ff7f)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  box-shadow: 0 0 8px rgba(0, 255, 127, 0.4);
+  transition: all 0.3s ease;
+}
+
+.logout-icon {
+  font-size: 1.3rem;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.profile-name {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 1.5px;
+  margin: 0;
+}

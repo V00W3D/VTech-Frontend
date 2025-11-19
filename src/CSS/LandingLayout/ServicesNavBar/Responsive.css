@@ -1,0 +1,16 @@
+/* ==========================================================
+   📱 SERVICES NAVBAR — Responsive Design
+   ========================================================== */
+
+@media (max-width: 768px) {
+  .services-navbar ul {
+    gap: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 40px;
+  }
+
+  .services-navbar li {
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+  }
+}

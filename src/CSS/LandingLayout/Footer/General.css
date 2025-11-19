@@ -1,0 +1,95 @@
+/* =======================================================
+   💚 SLIME FOOTER — Estilo Neón + Blur
+   ======================================================= */
+
+.slime-footer {
+  --slime-accent: #00ff7f;
+  --slime-accent-light: #00ffaa;
+  --slime-bg: rgba(10, 10, 10, 0.9);
+  --slime-border: rgba(255, 255, 255, 0.08);
+  --slime-text: #fefefe;
+
+  width: 100%;
+  margin-top: 4rem;
+  padding-top: 2.5rem;
+  background: var(--slime-bg);
+  border-top: 1px solid var(--slime-border);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 25px rgba(0, 255, 127, 0.15);
+}
+
+/* Contenedor principal */
+.slime-footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+
+  flex-wrap: wrap;
+}
+
+/* Secciones */
+.slime-footer-section {
+  min-width: 250px;
+  flex: 1;
+}
+
+.slime-footer-section h2 {
+  color: var(--slime-accent-light);
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+.slime-footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.slime-footer-section li {
+  color: var(--slime-text);
+  margin-bottom: 0.5rem;
+  opacity: 0.9;
+}
+
+/* Links */
+.slime-footer-section a {
+  color: var(--slime-text);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.slime-footer-section a:hover {
+  color: var(--slime-accent);
+  text-shadow: 0 0 6px var(--slime-accent);
+}
+
+/* Copyright */
+.slime-footer-bottom {
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: 2rem;
+  border-top: 1px solid var(--slime-border);
+}
+
+.slime-footer-bottom p {
+  color: var(--slime-text);
+  opacity: 0.7;
+  font-size: 0.95rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .slime-footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .slime-footer-section {
+    max-width: 400px;
+  }
+}

@@ -1,0 +1,41 @@
+/* ==========================================================
+   🎞️ Target Grid — Animations.css
+   ========================================================== */
+
+.target-card:hover::before {
+  opacity: 1;
+}
+
+/* -------- Hover visual -------- */
+.target-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--color-accent);
+  box-shadow: 0 0 15px rgba(0, 255, 127, 0.2);
+}
+
+/* Fade general para las tarjetas */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Efecto “glow” sutil para íconos */
+@keyframes iconPulse {
+  0%,
+  100% {
+    filter: drop-shadow(0 0 5px rgba(0, 255, 127, 0.2));
+  }
+  50% {
+    filter: drop-shadow(0 0 12px rgba(0, 255, 127, 0.4));
+  }
+}
+
+.target-icon:hover {
+  animation: iconPulse 1.5s infinite ease-in-out;
+}

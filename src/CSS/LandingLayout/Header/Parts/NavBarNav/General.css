@@ -1,0 +1,46 @@
+/* =======================================================
+   🟩 NAVBAR NAV — General Styles
+   ======================================================= */
+
+.slime-navbar-nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.slime-navbar-nav a,
+.slime-navbar-nav button {
+  position: relative;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--slime-text) !important;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 0.6rem 1.2rem;
+  border-radius: 30px;
+  overflow: hidden;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.slime-navbar-nav a::before,
+.slime-navbar-nav button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    var(--slime-accent-light),
+    var(--slime-accent)
+  );
+  transform: translateY(100%);
+  border-radius: inherit;
+  z-index: 0;
+}
+
+.slime-navbar-nav a span,
+.slime-navbar-nav button span {
+  position: relative;
+  z-index: 2;
+}

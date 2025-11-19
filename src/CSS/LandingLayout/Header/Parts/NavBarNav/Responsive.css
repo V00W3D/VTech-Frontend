@@ -1,0 +1,12 @@
+/* =======================================================
+   🟩 NAVBAR NAV — Responsive
+   ======================================================= */
+
+@media (max-width: 768px) {
+  .slime-navbar-nav {
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+}

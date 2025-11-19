@@ -1,0 +1,39 @@
+/* ==========================================================
+   📱 Buttons.Responsive.css — adaptaciones móviles
+   ========================================================== */
+
+/* Tablets medianas */
+@media (max-width: 768px) {
+  .request-btn {
+    padding: 0.7rem 1.3rem;
+    font-size: 0.95rem;
+  }
+
+  .auth-main-btn {
+    font-size: 1rem;
+    padding: 14px;
+  }
+
+  .close-btn {
+    font-size: 0.85rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+/* Móviles pequeños */
+@media (max-width: 480px) {
+  .request-btn {
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
+    letter-spacing: 1.5px;
+  }
+
+  .auth-main-btn {
+    font-size: 0.95rem;
+    padding: 12px;
+  }
+
+  .close-btn {
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,113 @@
+/* =======================================================
+   🧾 REQUEST CARD — Estilo moderno y elegante
+   ======================================================= */
+
+.request-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  box-shadow: 0 4px 20px var(--color-shadow);
+  padding: 1rem 1.4rem;
+  backdrop-filter: blur(12px);
+  transition: var(--transition);
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.request-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 30px rgba(0, 255, 127, 0.15);
+}
+
+/* --- HEADER --- */
+.request-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.request-status {
+  min-width: 110px;
+  text-align: left;
+}
+
+.request-state {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.request-id {
+  font-size: 0.85rem;
+  color: var(--color-muted);
+  margin-top: 0.2rem;
+}
+
+.request-details {
+  flex: 1;
+}
+
+.request-service {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 1.5px;
+}
+
+.request-target {
+  color: var(--color-accent-light);
+  font-size: 0.95rem;
+  letter-spacing: 1px;
+}
+
+.request-date {
+  font-size: 0.85rem;
+  color: var(--color-muted);
+  margin: 0.2rem 0;
+}
+
+.request-description {
+  color: var(--color-text);
+  opacity: 0.9;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-top: 0.4rem;
+}
+
+/* --- USER --- */
+.request-user {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* --- ACTIONS --- */
+.request-actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.8rem;
+  margin-top: 1rem;
+  border-top: 1px solid var(--color-border);
+  padding-top: 1rem;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
+  .request-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .request-user {
+    align-self: stretch;
+    justify-content: flex-start;
+  }
+
+  .request-actions {
+    justify-content: center;
+  }
+}

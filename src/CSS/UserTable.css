@@ -1,0 +1,165 @@
+/* ===============================
+   🎨 UserTable — estilo elegante
+   =============================== */
+
+.user-table-container {
+  margin: 2rem auto;
+  max-width: 1000px;
+  padding: 1rem;
+}
+
+/* -------- Estado -------- */
+.user-estado-badge {
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  font-weight: 600;
+  font-size: 0.85rem;
+  border-radius: 6px;
+  color: #111;
+  letter-spacing: 1px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+  min-width: 100px;
+}
+
+/* -------- Usuario -------- */
+.user-cell {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.user-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 4px rgba(255, 255, 255, 0.25);
+}
+
+.user-avatar-placeholder {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-nombre {
+  font-weight: 600;
+  color: #fff;
+  margin: 0;
+}
+
+.user-email {
+  color: var(--color-muted);
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.user-telefono {
+  color: var(--color-muted);
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+
+/* -------- Rol -------- */
+.user-rol {
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0.3rem 0.8rem;
+  border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+.user-rol.admin {
+  background-color: gold;
+  color: #111;
+}
+
+.user-rol.cliente {
+  background-color: silver;
+  color: #111;
+}
+
+/* -------- Acciones -------- */
+.user-acciones-container {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.user-accion-btn {
+  border: none;
+  border-radius: 6px;
+  padding: 0.45rem 1rem;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  font-size: 0.9rem;
+}
+
+.user-accion-btn:hover {
+  transform: translateY(-2px);
+}
+
+.user-accion-btn.editar {
+  background-color: #3c7bd9;
+}
+
+.user-accion-btn.editar:hover {
+  background-color: #4c8be9;
+}
+
+.user-accion-btn.banear {
+  background-color: #b22222;
+}
+
+.user-accion-btn.banear:hover {
+  background-color: #d63939;
+}
+
+/* -------- Contenedor general -------- */
+.admin-users-container {
+  justify-items: center;
+  display: block;
+  justify-content: unset;
+  align-items: unset;
+}
+
+.full-width {
+  width: 100%;
+  max-width: none;
+  padding: 0 2rem;
+  box-sizing: border-box;
+}
+
+/* -------- Responsividad -------- */
+@media (max-width: 768px) {
+  .user-cell {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .user-acciones-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .user-accion-btn {
+    width: 100%;
+  }
+}

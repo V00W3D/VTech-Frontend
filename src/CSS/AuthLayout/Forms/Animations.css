@@ -1,0 +1,50 @@
+/* ===========================
+   Forms — Animations & States
+   =========================== */
+
+.formauth:hover {
+  transform: translateY(-4px) scale(1.005);
+  box-shadow: 0 10px 40px rgba(0, 255, 127, 0.35);
+}
+
+.formauth img:hover {
+  transform: scale(1.03);
+  border-radius: 100px;
+  box-shadow: 0 0 25px rgba(0, 255, 127, 0.6);
+}
+
+.formauth:focus-within {
+  outline: 2px solid rgba(0, 255, 127, 0.15);
+  transform: translateY(-2px);
+}
+
+/* Transición de entrada suave */
+.formauth--enter {
+  opacity: 0;
+  transform: translateY(12px) scale(0.99);
+  transition: opacity 280ms ease, transform 280ms ease;
+}
+.formauth--enter.formauth--enter-active {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* =======================================================
+   ✨ FadeIn para Auth Form
+   ======================================================= */
+
+@keyframes authFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Clase aplicable al cargar el formulario */
+.auth-form.fadeIn {
+  animation: authFadeIn 0.7s ease-out forwards;
+}

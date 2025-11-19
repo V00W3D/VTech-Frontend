@@ -1,0 +1,24 @@
+/* =======================================================
+   🟩 NAVBAR NAV — Animations & Interactions
+   ======================================================= */
+
+.slime-navbar-nav a,
+.slime-navbar-nav button {
+  transition: all 0.3s ease;
+}
+
+.slime-navbar-nav a::before,
+.slime-navbar-nav button::before {
+  transition: transform 0.35s ease;
+}
+
+.slime-navbar-nav a:hover,
+.slime-navbar-nav button:hover {
+  color: #000 !important;
+  transform: translateY(-2px);
+}
+
+.slime-navbar-nav a:active,
+.slime-navbar-nav button:active {
+  transform: scale(0.95);
+}

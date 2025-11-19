@@ -1,0 +1,9 @@
+/* =======================================================
+   📧 CONTACT INFO — General Styles
+   ======================================================= */
+
+.icon {
+  font-size: 1.3rem;
+  color: var(--slime-accent, #00ff7f);
+  transition: all 0.3s ease;
+}

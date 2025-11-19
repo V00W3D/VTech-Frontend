@@ -1,0 +1,159 @@
+/* ==========================================================
+   🧩 Modal.css — Estructura principal del modal
+   ========================================================== */
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.98);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  backdrop-filter: blur(4px);
+}
+
+/* -------- Contenedor principal -------- */
+.modal-content {
+  position: relative;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+  box-shadow: 0 0 35px rgba(0, 255, 127, 0.18);
+  padding: 2.5rem 2rem;
+  text-align: left;
+  max-width: 440px;
+  width: 90%;
+  color: white;
+}
+
+/* -------- Header -------- */
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.modal-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--color-accent);
+}
+
+/* -------- Botón cerrar -------- */
+.modal-close {
+  background: none;
+  border: none;
+  color: var(--color-accent);
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: 0.2s ease;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-close:hover {
+  background: rgba(0, 255, 127, 0.1);
+  transform: scale(1.05);
+}
+
+/* -------- Formulario -------- */
+.modal__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+/* Campos del formulario */
+.modal-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.modal-label {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--color-accent);
+}
+
+.modal-select,
+.modal-textarea {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid var(--color-border);
+  background: rgba(0, 0, 0, 0.95);
+  color: white;
+  padding: 0.8rem 1rem;
+  font-size: 0.95rem;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+/* -------- Opciones del select -------- */
+.modal-select option {
+  background: #000;
+  color: white;
+  transition: background 0.2s ease;
+}
+
+/* -------- Descripción -------- */
+.modal-textarea {
+  resize: vertical;
+  min-height: 90px;
+}
+
+/* -------- Disclaimer -------- */
+.modal-disclaimer {
+  font-size: 0.9rem;
+  color: var(--color-muted);
+  line-height: 1.5;
+  border-left: 2px solid var(--color-accent);
+  padding-left: 1rem;
+  background: rgba(0, 255, 127, 0.05);
+  border-radius: 8px;
+}
+
+/* -------- Botones -------- */
+.modal-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.modal-actions .btn {
+  flex: 1;
+  padding: 0.8rem 1.2rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  transition: 0.2s ease;
+}
+
+/* Verde aceptar */
+.btn-primary {
+  background: linear-gradient(
+    90deg,
+    var(--color-accent),
+    var(--color-accent-light)
+  );
+  color: black;
+}
+
+/* Rojo cancelar */
+.btn-secondary {
+  background: rgba(255, 0, 0, 0.15);
+  border: 1px solid rgba(255, 0, 0, 0.4);
+  color: #ff6b6b;
+}

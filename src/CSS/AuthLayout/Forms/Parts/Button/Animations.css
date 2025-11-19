@@ -1,0 +1,41 @@
+/* ===========================
+   Buttons — Animations & States
+   =========================== */
+
+.auth-main-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 255, 127, 0.45);
+  color: #000;
+}
+.auth-main-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 6px 18px rgba(0, 255, 127, 0.32);
+}
+.auth-main-btn:disabled {
+  background: rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.7);
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+.auth-link-btn:hover {
+  color: var(--color-accent) !important;
+}
+.auth-link-btn:hover::after {
+  width: 60%;
+}
+
+.btn--outline:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+.btn-icon:hover {
+  background: rgba(0, 255, 127, 0.1);
+}
+
+.glow {
+  box-shadow: 0 8px 32px rgba(0, 255, 127, 0.18);
+  transform: translateY(-2px);
+  transition: all 0.25s ease;
+}

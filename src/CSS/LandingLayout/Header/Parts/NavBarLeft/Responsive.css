@@ -1,0 +1,25 @@
+/* =======================================================
+   📱 NAVBAR LEFT — Responsive
+   ======================================================= */
+@media (max-width: 768px) {
+  .slime-navbar-left {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .slime-auth-buttons {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .slime-auth-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .slime-navbar-brand {
+    height: 50px;
+    align-self: center;
+  }
+}

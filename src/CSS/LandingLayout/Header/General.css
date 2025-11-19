@@ -1,0 +1,52 @@
+/* =======================================================
+   🧭 SLIME HEADER — General Styles (Base)
+   ======================================================= */
+
+.slime-header {
+  --slime-accent: #00ff7f;
+  --slime-accent-light: #00ffaa;
+  --slime-bg: rgba(15, 15, 15, 0.9);
+  --slime-border: rgba(255, 255, 255, 0.08);
+  --slime-text: #f5f5f5;
+
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 100;
+  background: var(--slime-bg);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--slime-border);
+  box-shadow: 0 0 25px rgba(0, 255, 127, 0.15);
+  transition: all 0.3s ease;
+}
+
+/* =======================================================
+   🔤 CONTENEDOR PRINCIPAL
+   ======================================================= */
+
+.slime-navbar {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 2rem;
+}
+
+.slime-navbar-container {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* =======================================================
+   🧩 LOGO / BRAND
+   ======================================================= */
+
+.slime-navbar-brand {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--slime-text);
+  text-decoration: none;
+  letter-spacing: 4px;
+  transition: all 0.3s ease;
+}

@@ -1,0 +1,28 @@
+/* ===========================
+   Fields — Animations & States
+   =========================== */
+
+.input-container input:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.input-container input:focus {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px rgba(0, 255, 127, 0.25);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.input-container input:focus + label,
+.input-container input:not(:placeholder-shown) + label,
+.input-container textarea:focus + label,
+.input-container textarea:not(:placeholder-shown) + label {
+  opacity: 1;
+  transform: translateY(-24px);
+  font-size: 13px;
+  color: var(--color-accent-light);
+}
+
+.input-container.error input {
+  box-shadow: 0 0 0 3px rgba(255, 107, 107, 0.06);
+  background: rgba(255, 107, 107, 0.04);
+}

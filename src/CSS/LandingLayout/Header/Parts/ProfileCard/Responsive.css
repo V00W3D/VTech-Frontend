@@ -1,0 +1,22 @@
+/* =======================================================
+   👤 PROFILE CARD — Responsive
+   ======================================================= */
+
+@media (max-width: 768px) {
+  .profile-card {
+    padding: 0.4rem 0.6rem;
+  }
+
+  .profile-name {
+    font-size: 0.85rem;
+  }
+
+  .profile-info {
+    display: none;
+  }
+
+  .profile-avatar {
+    width: 36px;
+    height: 36px;
+  }
+}

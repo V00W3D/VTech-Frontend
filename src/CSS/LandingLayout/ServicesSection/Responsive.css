@@ -1,0 +1,43 @@
+/* ==========================================================
+   📱 Responsive.css — adaptabilidad de interfaz
+   ========================================================== */
+
+@media (max-width: 768px) {
+  .target-card {
+    width: 150px;
+    min-height: 150px;
+  }
+
+  .target-icon-wrapper {
+    height: 70px;
+    width: 70px;
+  }
+
+  .service-black-container {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-title {
+    font-size: 1.5rem;
+  }
+
+  .request-btn {
+    font-size: 0.9rem;
+    padding: 0.7rem 1.2rem;
+  }
+
+  .modal-content {
+    padding: 1.8rem 1.2rem;
+  }
+
+  .modal-content h2 {
+    font-size: 1.4rem;
+  }
+
+  .modal-content .auth-main-btn {
+    font-size: 1rem;
+    padding: 14px;
+  }
+}

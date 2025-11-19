@@ -1,0 +1,23 @@
+/* =======================================================
+   📱 BANNER V TECH — Responsive
+   ======================================================= */
+@media (max-width: 900px) {
+  .banner-vtech {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .banner-logo {
+    width: 180px;
+    margin-bottom: 2rem;
+  }
+
+  .banner-img {
+    width: 100%;
+    height: 180px;
+  }
+
+  .banner-text h2 {
+    font-size: 1.6rem;
+  }
+}

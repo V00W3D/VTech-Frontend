@@ -1,0 +1,27 @@
+/* ===========================
+   Buttons — Responsive
+   =========================== */
+
+@media (max-width: 768px) {
+  .auth-main-btn {
+    font-size: 16px;
+    padding: 14px;
+    border-radius: 12px;
+  }
+  .btn--small {
+    padding: 6px 10px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 420px) {
+  .auth-main-btn {
+    font-size: 15px;
+    padding: 12px;
+    letter-spacing: 2px;
+  }
+  .btn-icon {
+    width: 40px;
+    height: 40px;
+  }
+}

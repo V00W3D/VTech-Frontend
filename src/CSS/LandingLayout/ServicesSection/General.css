@@ -1,0 +1,100 @@
+/* ==========================================================
+   🌐 General.css — estilos base globales
+   ========================================================== */
+.landing-services-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background: linear-gradient(180deg, #0a0a0a, #0f1c10, #020202);
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+/* Loading y error states */
+.loading-state,
+.error-state {
+  width: 100%;
+  text-align: center;
+  padding: 5rem 1rem;
+  font-size: 2rem;
+  color: var(--color-accent);
+}
+
+.error-state {
+  color: #ff4d4d;
+}
+
+/* -------- Sección principal -------- */
+.service-section {
+  padding: 5rem 1rem;
+  text-align: center;
+  color: var(--color-text);
+  position: relative;
+  animation: fadeIn 0.6s ease both;
+}
+
+/* -------- Título principal -------- */
+.service-title {
+  color: var(--color-accent);
+  font-size: 2rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+/* -------- Eslogan -------- */
+.service-slogan {
+  color: var(--color-muted);
+  max-width: 700px;
+  margin: 0 auto 1rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* -------- Descripción -------- */
+.service-description {
+  max-width: 900px;
+  margin: 0 auto 2rem;
+  color: var(--color-muted);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+/* -------- Imagen del servicio -------- */
+.service-image {
+  max-width: 500px;
+  height: auto;
+  margin: 1.5rem auto;
+  display: block;
+  border-radius: var(--radius-card);
+  border: 1px solid var(--color-border);
+  box-shadow: 0 0 15px rgba(0, 255, 127, 0.15);
+}
+
+/* -------- Contenedor principal oscuro -------- */
+.service-black-container {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  box-shadow: 0 4px 25px var(--color-shadow);
+  backdrop-filter: blur(15px);
+  padding: 2rem;
+  max-width: var(--max-width);
+  margin: 2rem auto;
+  transition: var(--transition);
+}
+
+/* -------- Título interno de secciones -------- */
+.targets-title {
+  color: white;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  letter-spacing: 2px;
+}
+
+/* -------- Texto de color acentuado -------- */
+.accent-text {
+  color: var(--color-accent);
+}

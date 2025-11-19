@@ -1,0 +1,38 @@
+/* ==========================================================
+   ⚡ SERVICES NAVBAR — Animations & Interactive States
+   ========================================================== */
+
+/* Hover - fondo deslizante */
+.services-navbar li:hover::before {
+  transform: translateY(0);
+}
+
+/* Hover - texto y elevación */
+.services-navbar li:hover {
+  color: #000;
+  transform: translateY(-2px);
+}
+
+/* Click feedback */
+.services-navbar li:active {
+  transform: scale(0.95);
+}
+
+/* Transiciones */
+.services-navbar ul {
+  transition: var(--transition);
+}
+
+.services-navbar li {
+  transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease;
+}
+
+/* Transición del fondo (::before) */
+.services-navbar li::before {
+  transition: transform 0.35s ease;
+}
+
+/* Transición del indicador (::after) */
+.services-navbar ul::after {
+  transition: left 0.3s ease, width 0.3s ease;
+}

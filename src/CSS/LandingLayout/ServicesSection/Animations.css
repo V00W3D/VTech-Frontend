@@ -1,0 +1,44 @@
+/* ==========================================================
+   🎞️ Animations.css — animaciones y efectos
+   ========================================================== */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* -------- Transiciones de hover generales -------- */
+.target-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--color-accent);
+  box-shadow: 0 0 15px rgba(0, 255, 127, 0.2);
+}
+
+.target-card:hover .target-icon {
+  transform: scale(1.1);
+  opacity: 1;
+  filter: drop-shadow(0 0 10px rgba(0, 255, 127, 0.4));
+}
+
+.request-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 255, 127, 0.35);
+  color: #000;
+}
+
+.close-btn:hover {
+  background: rgba(0, 255, 127, 0.1);
+  transform: translateY(-2px);
+}
+
+.modal-content .auth-main-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 255, 127, 0.45);
+  color: #000;
+}

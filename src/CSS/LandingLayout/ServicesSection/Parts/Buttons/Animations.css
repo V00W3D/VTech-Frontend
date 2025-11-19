@@ -1,0 +1,46 @@
+/* ==========================================================
+   ✨ Buttons.Animations.css — animaciones y estados
+   ========================================================== */
+
+/* Hover del botón de solicitud */
+.request-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 255, 127, 0.35);
+  color: #000;
+}
+
+/* Hover y focus del botón principal del modal */
+.auth-main-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 255, 127, 0.45);
+  color: #000;
+}
+
+.auth-main-btn:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 255, 127, 0.6);
+}
+
+/* Hover del botón cerrar */
+.close-btn:hover {
+  background: rgba(0, 255, 127, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Animación de brillo suave al cargar */
+@keyframes buttonFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.request-btn,
+.auth-main-btn,
+.close-btn {
+  animation: buttonFadeIn 0.5s ease both;
+}

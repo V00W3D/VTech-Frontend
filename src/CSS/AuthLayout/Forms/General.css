@@ -1,0 +1,79 @@
+/* =======================================================
+   🧩 FORMS — General
+   ======================================================= */
+
+.main {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.auth-form-wrapper {
+  padding-top: 5rem;
+  margin-top: 6rem;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at top, rgba(0, 255, 127, 0.12), #000);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+}
+
+.auth-logo {
+  width: 90px;
+  height: 90px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  filter: none; /* sin efecto neon */
+  transition: var(--transition);
+}
+
+.auth-title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  text-shadow: 0 0 6px rgba(0, 255, 127, 0.4);
+}
+
+.formauth {
+  background: var(--color-surface);
+  border-radius: 20px;
+  width: clamp(280px, 35vw, 420px);
+  aspect-ratio: 1 / 1;
+  backdrop-filter: blur(22px);
+  border: 1px solid var(--color-border);
+  box-shadow: 0 0 35px rgba(0, 255, 127, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+  padding: 35px;
+  transition: var(--transition);
+  text-align: center;
+}
+
+.formauth h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: white;
+  text-shadow: 0 0 8px rgba(0, 255, 127, 0.3);
+}
+
+.formauth img {
+  height: auto;
+  width: 100%;
+  max-width: 200px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: var(--transition);
+}

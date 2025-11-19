@@ -1,0 +1,143 @@
+/* =============================
+   🧱 TABLEBUILDER — Estilo elegante verde oscuro
+   ============================= */
+/* Centrado universal sin hacks */
+.table-wrapper {
+  width: 100%;
+  max-width: 100%; /* Nunca se sale del modal */
+  overflow-x: auto; /* Permite scroll si la tabla es grande */
+  margin: 0 auto; /* Centra el contenedor SIEMPRE */
+
+  padding: 1rem;
+  border-radius: var(--radius-card);
+  background: rgba(15, 15, 15, 0.7);
+  border: 1px solid var(--color-border);
+  box-shadow: 0 4px 15px var(--color-shadow);
+  backdrop-filter: blur(10px);
+  box-sizing: border-box;
+}
+
+/* Para asegurar que la tabla no se achique y corte columnas */
+.custom-table {
+  width: max-content; /* 💚 MÁGICO: nunca aplasta las columnas */
+  min-width: 100%; /* Pero respeta el tamaño mínimo del wrapper */
+  border-collapse: collapse;
+  text-align: center;
+  table-layout: auto; /* Deja que las columnas tengan su tamaño ideal */
+  color: var(--color-text);
+  font-family: var(--font-sans);
+}
+
+.table-header {
+  background: var(--color-accent);
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+}
+
+.header-cell {
+  padding: 0.8rem 1rem;
+  border-top: 1px solid var(--color-accent-light);
+  border-bottom: 2px solid var(--color-accent-light);
+}
+
+.header-cell.rounded-left {
+  border-top-left-radius: 8px;
+}
+
+.header-cell.rounded-right {
+  border-top-right-radius: 8px;
+}
+
+.table-body {
+  background: var(--color-surface);
+}
+
+.table-row {
+  transition: var(--transition);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.table-row:hover {
+  background: rgba(0, 255, 127, 0.05);
+  transform: scale(1.01);
+}
+
+.table-cell {
+  padding: 0.8rem 1rem;
+  color: var(--color-text);
+  background: rgba(20, 20, 20, 0.9);
+  border-bottom: 1px solid var(--color-border);
+  white-space: nowrap;
+}
+
+.table-cell:last-child {
+  border-right: none;
+}
+
+/* ✨ Fila actualizada visualmente */
+.row-updated {
+  animation: flashRow 0.8s ease;
+}
+
+@keyframes flashRow {
+  0% {
+    background-color: rgba(0, 255, 127, 0.2);
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+.table-empty {
+  color: var(--color-muted);
+  text-align: center;
+  padding: 2rem;
+  font-size: 1rem;
+}
+
+.targets-table-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.target-table-card {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #1d1d1d;
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 1px solid #333;
+}
+
+.target-table-icon-wrapper {
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.target-table-icon {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
+.target-table-icon-placeholder {
+  width: 26px;
+  height: 26px;
+  background: #444;
+  border-radius: 6px;
+}
+
+.target-table-name {
+  font-size: 0.85rem;
+  color: #e1e1e1;
+  font-weight: 500;
+}

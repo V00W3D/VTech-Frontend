@@ -1,0 +1,9 @@
+/* =======================================================
+   🌀 CONTACT INFO — Animations & Hover States
+   ======================================================= */
+
+.icon:hover {
+  color: var(--slime-accent-light, #00ffaa);
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 8px rgba(0, 255, 127, 0.3));
+}

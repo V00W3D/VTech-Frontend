@@ -1,0 +1,58 @@
+/* ==========================================================
+   🧱 Target Grid — General.css
+   ========================================================== */
+
+/* -------- Grid principal -------- */
+.targets-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--gap);
+  margin-bottom: 1rem;
+}
+
+/* -------- Tarjeta individual -------- */
+.target-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  padding: 1rem 1.2rem;
+  width: 180px;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  transition: var(--transition);
+  animation: fadeIn 0.6s ease both;
+  position: relative;
+  overflow: hidden;
+}
+
+/* -------- Efecto decorativo -------- */
+.target-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at top,
+    rgba(0, 255, 127, 0.05),
+    transparent 70%
+  );
+  opacity: 0;
+  transition: var(--transition);
+}
+.target-icon {
+  max-width: 50px;
+}
+/* -------- Contenedor del ícono -------- */
+.target-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  background: rgba(0, 255, 127, 0.05);
+  transition: var(--transition);
+}

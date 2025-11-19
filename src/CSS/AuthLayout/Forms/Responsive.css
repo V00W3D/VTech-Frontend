@@ -1,0 +1,38 @@
+/* ===========================
+   Forms — Responsive
+   =========================== */
+
+@media (max-width: 1024px) {
+  .formauth {
+    width: clamp(300px, 40vw, 420px);
+  }
+}
+
+@media (max-width: 768px) {
+  .formauth {
+    width: 80vw;
+    padding: 28px;
+  }
+  .formauth img {
+    max-width: 160px;
+  }
+  .formauth h1 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .formauth {
+    width: 95vw;
+    padding: 25px;
+    gap: 16px;
+    aspect-ratio: auto;
+  }
+  .formauth img {
+    width: 48%;
+  }
+  .formauth h1 {
+    font-size: 1.35rem;
+    letter-spacing: 2px;
+  }
+}

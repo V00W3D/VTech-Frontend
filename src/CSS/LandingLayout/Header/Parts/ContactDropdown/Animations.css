@@ -1,0 +1,43 @@
+/* =======================================================
+   🟢 CONTACT DROPDOWN — Animations & Interactions
+   ======================================================= */
+
+.slime-nav-dropdown-btn,
+.slime-nav-dropdown-menu,
+.slime-contact-item {
+  transition: all 0.3s ease;
+}
+
+.slime-nav-dropdown-btn::before {
+  transition: transform 0.35s ease;
+}
+
+.slime-nav-dropdown-btn:hover::before {
+  transform: translateY(0);
+}
+
+.slime-nav-dropdown-btn:hover {
+  color: #000 !important;
+  transform: translateY(-2px);
+}
+
+.slime-nav-dropdown-menu.open {
+  animation: slimeFadeIn 0.25s ease;
+}
+
+.slime-contact-item:hover {
+  color: #000 !important;
+  background: rgba(0, 255, 127, 0.15);
+  transform: translateX(4px);
+}
+
+@keyframes slimeFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

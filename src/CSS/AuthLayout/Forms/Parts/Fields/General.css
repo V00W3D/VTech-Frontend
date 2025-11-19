@@ -1,0 +1,61 @@
+/* ===========================
+   Fields — General
+   =========================== */
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+}
+
+.input-container input,
+.input-container textarea,
+.input-container select {
+  width: 100%;
+  padding: 18px 16px;
+  border-radius: 50px;
+  border: 1px solid var(--color-border);
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--color-text);
+  outline: none;
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  margin-bottom: 22px;
+  box-sizing: border-box;
+  transition: var(--transition);
+}
+
+.input-container label {
+  position: absolute;
+  left: 20px;
+  top: 22px;
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 15px;
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+}
+
+.field-help {
+  font-size: 0.8rem;
+  color: var(--color-muted);
+  margin-top: -16px;
+  margin-bottom: 10px;
+}
+
+.field-error {
+  color: #ff6b6b;
+  font-size: 0.85rem;
+  margin-top: -12px;
+  margin-bottom: 8px;
+}
+
+.textarea-container .textarea-builder {
+  min-height: 120px;
+  resize: vertical;
+  overflow-y: auto;
+  padding-top: 14px;
+  font-family: inherit;
+}

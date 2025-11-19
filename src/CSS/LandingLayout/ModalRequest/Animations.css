@@ -1,0 +1,114 @@
+/* ==========================================================
+   🧩 ModalAnimations.css — Transiciones y animaciones
+   ========================================================== */
+
+/* -------- Animación principal -------- */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.modal-overlay {
+  animation: fadeIn 0.3s ease both;
+}
+
+.modal-content {
+  animation: fadeIn 0.5s ease both;
+  transition: var(--transition);
+}
+
+.modal-form label {
+  transition: all 0.3s ease;
+}
+
+.modal-form input,
+.modal-form textarea,
+.modal-form select {
+  transition: var(--transition);
+}
+
+/* -------- Interacciones -------- */
+.modal-form input:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.modal-form input:focus {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px rgba(0, 255, 127, 0.25);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* Label flotante animado */
+.modal-form input:focus + label,
+.modal-form input:not(:placeholder-shown) + label,
+.modal-form textarea:focus + label,
+.modal-form textarea:not(:placeholder-shown) + label {
+  opacity: 1;
+  transform: translateY(-24px);
+  font-size: 13px;
+  color: var(--color-accent-light);
+}
+
+.auth-main-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 255, 127, 0.45);
+  color: #000;
+}
+
+.close-btn:hover {
+  background: rgba(0, 255, 127, 0.1);
+  transform: translateY(-2px);
+}
+
+/* ==========================================================
+   🎞️ Animations.css — Animaciones y efectos
+   ========================================================== */
+
+/* -------- Transición al mostrar modal -------- */
+.modal-content {
+  animation: modalFadeIn 0.3s ease both;
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* -------- Hover states -------- */
+.modal-select:hover {
+  border-color: var(--color-accent);
+}
+
+.modal-select option:hover {
+  background: var(--color-accent);
+  color: black;
+}
+
+.modal-textarea:focus,
+.modal-select:focus {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 10px rgba(0, 255, 127, 0.3);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 255, 127, 0.4);
+}
+
+.btn-secondary:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 0, 0, 0.3);
+  box-shadow: 0 4px 12px rgba(255, 0, 0, 0.25);
+}

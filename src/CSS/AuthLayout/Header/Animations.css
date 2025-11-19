@@ -1,0 +1,45 @@
+/* =======================================================
+   🌀 AUTH HEADER — Animations (Hover, Focus, States)
+   ======================================================= */
+
+/* Hover suave tipo “slime” */
+.auth-nav-btn:hover::before {
+  transform: translateY(0);
+}
+
+.auth-nav-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 10px rgba(0, 255, 127, 0.35);
+}
+
+.auth-nav-btn:hover span {
+  color: #000 !important;
+}
+
+/* Estado activo */
+.auth-nav-btn.active::before {
+  transform: translateY(0);
+}
+
+.auth-nav-btn.active span {
+  color: #000 !important;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Transiciones suaves entre cambios */
+.auth-nav-btn,
+.auth-nav-btn::before,
+.auth-nav-btn span {
+  transition: all 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Click feedback */
+.auth-nav-btn:active {
+  transform: scale(0.96);
+}
+
+/* Hover en logo */
+.auth-logo:hover {
+  color: var(--color-accent-light);
+  text-shadow: 0 0 10px rgba(0, 255, 127, 0.4);
+}

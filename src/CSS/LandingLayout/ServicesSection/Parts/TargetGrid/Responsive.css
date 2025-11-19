@@ -1,0 +1,39 @@
+/* ==========================================================
+   📱 Target Grid — Responsive.css
+   ========================================================== */
+
+/* Tablets y pantallas medianas */
+@media (max-width: 768px) {
+  .target-card {
+    width: 150px;
+    min-height: 150px;
+  }
+
+  .target-icon-wrapper {
+    height: 70px;
+    width: 70px;
+  }
+}
+
+/* Móviles pequeños */
+@media (max-width: 480px) {
+  .targets-grid {
+    gap: 0.8rem;
+  }
+
+  .target-card {
+    width: 130px;
+    min-height: 130px;
+    padding: 0.8rem 1rem;
+  }
+
+  .target-name {
+    font-size: 0.8rem;
+    letter-spacing: 1.5px;
+  }
+
+  .target-icon-wrapper {
+    height: 60px;
+    width: 60px;
+  }
+}

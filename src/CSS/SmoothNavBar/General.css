@@ -1,0 +1,221 @@
+/* ==========================================================
+   🧭 SMOOTH NAVBAR — General Styles
+   ========================================================== */
+
+/* Contenedor principal (flotante y centrado) */
+/* Contenedor principal (flotante y centrado) */
+.smooth-navbar {
+  position: fixed; /* 👈 cambia sticky por fixed */
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+  padding: 1rem 0;
+  transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  backdrop-filter: blur(25px);
+}
+
+/* Agregá un espacio visual para que no tape el contenido */
+body {
+  scroll-behavior: smooth;
+  padding-top: 80px; /* ≈ altura del navbar */
+}
+
+/* 🌫️ Efecto de fondo dinámico al scrollear */
+.smooth-navbar.scrolled {
+  background: rgba(0, 0, 0, 0.75);
+  box-shadow: 0 0 20px rgba(0, 255, 127, 0.15);
+  backdrop-filter: blur(25px);
+  transition: background 0.35s ease, box-shadow 0.35s ease;
+}
+
+/* Contenedor interno (logo + menú) */
+.smooth-navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: min(90%, 1200px);
+  overflow: visible;
+}
+
+/* 🧡 Logo */
+.smooth-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.smooth-logo-img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.smooth-logo h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--color-text);
+  letter-spacing: 1px;
+}
+
+/* 🍯 NAV BUTTONS — “Tira” central */
+.smooth-nav {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0.6rem 2rem;
+  border-radius: 50px;
+  background: var(--color-surface);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--color-border);
+  box-shadow: 0 0 25px rgba(0, 255, 127, 0.15);
+  position: relative;
+}
+
+/* Ítems */
+.smooth-nav-item {
+  position: relative;
+}
+
+/* Botones */
+.smooth-nav-btn {
+  position: relative;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--color-text);
+  cursor: pointer;
+  padding: 0.6rem 1rem;
+  border-radius: 25px;
+  background: transparent;
+  border: none;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* Fondo deslizante verde (::before) */
+.smooth-nav-btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    var(--color-accent-light),
+    var(--color-accent)
+  );
+  transform: translateY(100%);
+  border-radius: inherit;
+  z-index: 0;
+}
+
+/* Texto encima del fondo */
+.smooth-nav-btn span,
+.smooth-nav-btn {
+  position: relative;
+  z-index: 1;
+}
+
+/* Indicador verde deslizante (::after en ul) */
+.smooth-nav::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  height: 3px;
+  width: 0;
+  background: var(--color-accent);
+  border-radius: 50px;
+}
+
+/* Estado activo */
+.smooth-nav-btn.active::before {
+  transform: translateY(0);
+}
+
+.smooth-nav-btn.active {
+  color: #000;
+  box-shadow: 0 0 10px rgba(0, 255, 127, 0.35);
+}
+
+/* ==========================================================
+   ⚡ SMOOTH NAVBAR — Animations & Interactive States
+   ========================================================== */
+
+/* Hover - fondo deslizante */
+.smooth-nav-btn:hover::before {
+  transform: translateY(0);
+}
+
+/* Hover - texto y elevación */
+.smooth-nav-btn:hover {
+  color: #000;
+  transform: translateY(-2px);
+}
+
+/* Click feedback */
+.smooth-nav-btn:active {
+  transform: scale(0.95);
+}
+
+/* Transiciones */
+.smooth-nav {
+  transition: var(--transition);
+}
+
+.smooth-nav-btn {
+  transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease;
+}
+
+.smooth-nav-btn::before {
+  transition: transform 0.35s ease;
+}
+
+.smooth-nav::after {
+  transition: left 0.3s ease, width 0.3s ease;
+}
+
+/* ==========================================================
+   🩵 SMOOTH DROPDOWN — Submenús
+   ========================================================== */
+
+.smooth-dropdown {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  background: var(--color-surface);
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 255, 127, 0.15);
+  border: 1px solid var(--color-border);
+  padding: 0.5rem 0;
+  backdrop-filter: blur(15px);
+  overflow: hidden;
+  min-width: 180px;
+  z-index: 10;
+}
+
+.smooth-dropdown-item {
+  padding: 0.6rem 1rem;
+  color: var(--color-text);
+  cursor: pointer;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.smooth-dropdown-item:hover {
+  background: linear-gradient(
+    135deg,
+    var(--color-accent-light),
+    var(--color-accent)
+  );
+  color: #000;
+}
